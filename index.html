@@ -8,35 +8,55 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div style="text-align:center">
-          <h2>Contact Us</h2>
-          <p>Swing by for a cup of coffee, or leave us a message:</p>
+   <section class="contact-section pt-5 pb-5" id="contact">
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+          <h3 class=" text-uppercase pb-4 font-weight-bold custom-font-h3 text-center text-white pb-3">Contact Us</h3>
         </div>
-        <div class="row">
-          
-          <div class="column">
+        <div class="col-lg-6 col-md-8 sm-12">
+            <div class="contact-box">
             <form id="submit-form" action="">
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="name" placeholder="Your name..">
-              <label for="lname">Email</label>
-              <input type="text" id="lname" name="email" placeholder="Your last name..">
-              <label for="country">Country</label>
-              <select id="country" name="color">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-              </select>
-              <label for="subject">Subject</label>
-              <textarea id="subject" name="message" placeholder="Write something.." style="height:170px"></textarea>
-              <input type="submit" value="Submit">
-            </form>
-          </div>
-          <div class="column">
-            <img src="" style="width:100%">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Name Here" name="name">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="Email Here" name="mail">
+                </div>
+                <div class="form-group">
+                  <input type="number" class="form-control" placeholder="Contact Number Here" name="contact">
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" placeholder="Message" name="message"></textarea>
+                </div>
+                <div class="form-group text-center">
+                  <button class="text-uppercase btn btn-success"  value="Submit" type="submit">Send message</button>
+                </div>
+              </form>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-4 sm-12">
+          <div class="address-box text-white text-center text-md-left pl-lg-5">
+            <h4><strong>MADATHIL GROUP OF COMPANIES</strong><br><br>
+           
+           <p>  <a class="text-white text-decoration-none" href=""><i class="fa fa-envelope"></i> madathilbusinessgroup@gmail.com</a><br></p>
+         <p>  <a class="text-white text-decoration-none" href=""><i class="fa fa-phone" aria-hidden="true"></i> 9446712657 ,9745678391</a></p>
+  
+          <div class="rounded-social-buttons">
+            <h5>Follow us</h5>
+            
+                      <a class="social-button facebook" href="" ><i class="fab fa-facebook-f"></i></a>
+                      <a class="social-button instagram" href="" ><i class="fab fa-instagram"></i></a>
+                    
+                      <a class="social-button youtube" href="" ><i class="fab fa-youtube"></i></a>
+                     
+                  </div>
           </div>
         </div>
-      </div>
+    </div>
+  </div>
+  </section>
+
       <script>
         $("#submit-form").submit((e)=>{
             e.preventDefault()
